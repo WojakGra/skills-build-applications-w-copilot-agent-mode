@@ -20,15 +20,23 @@ from django.urls import path, include
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from django.urls import reverse
+import os
 
 @api_view(['GET'])
 def api_root(request, format=None):
+    # Build absolute URLs using codespace hostname or localhost
+    codespace_name = os.getenv('CODESPACE_NAME')
+    if codespace_name:
+        base_url = f'https://{codespace_name}-8000.app.github.dev'
+    else:
+        base_url = request.build_absolute_uri('/').rstrip('/')
+    
     return Response({
-        'users': reverse('user-list', request=request, format=format),
-        'teams': reverse('team-list', request=request, format=format),
-        'activities': reverse('activity-list', request=request, format=format),
-        'workouts': reverse('workout-list', request=request, format=format),
-        'leaderboard': reverse('leaderboard-list', request=request, format=format),
+        'users': f"{base_url}{reverse('user-list')}",
+        'teams': f"{base_url}{reverse('team-list')}",
+        'activities': f"{base_url}{reverse('activity-list')}",
+        'workouts': f"{base_url}{reverse('workout-list')}",
+        'leaderboard': f"{base_url}{reverse('leaderboard-list')}",
     })
 
 urlpatterns = [
