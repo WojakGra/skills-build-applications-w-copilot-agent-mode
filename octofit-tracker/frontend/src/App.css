@@ -1,0 +1,322 @@
+/* OctoFit Tracker App Styles */
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-attachment: fixed;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffd700 !important;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  color: #ffed4e !important;
+}
+
+.navbar-logo {
+  height: 45px;
+  width: auto;
+  margin-right: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: rotate(5deg) scale(1.1);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.5);
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #e0e0e0 !important;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+  color: #ffd700 !important;
+  border-bottom: 2px solid #ffd700;
+}
+
+.nav-link.active {
+  color: #ffd700 !important;
+  border-bottom: 2px solid #ffd700;
+}
+
+/* Content Container */
+.content-wrapper {
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  border: 2px solid rgba(102, 126, 234, 0.2);
+}
+
+.content-wrapper .text-muted {
+  color: #666 !important;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Home Page Styling */
+.home-container {
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 3rem;
+  margin: 3rem auto;
+  max-width: 900px;
+  text-align: center;
+  border: 2px solid rgba(102, 126, 234, 0.2);
+}
+
+.home-container h1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.home-container .lead {
+  color: #555;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.home-container .card {
+  transition: all 0.3s ease;
+  border-width: 2px;
+}
+
+.home-container .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-container .card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* Table Styling */
+.table-responsive {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.table thead th {
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  padding: 1rem;
+}
+
+.table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background: linear-gradient(90deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(102, 126, 234, 0.08);
+}
+
+.table tbody td {
+  padding: 1rem;
+  vertical-align: middle;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Page Headers */
+.page-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(90deg, #667eea, #764ba2) 1;
+}
+
+/* Badge Styling */
+.badge {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.badge.bg-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.badge.bg-success {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%) !important;
+}
+
+.badge.bg-info {
+  background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%) !important;
+}
+
+.badge.bg-warning {
+  background: linear-gradient(135deg, #f2994a 0%, #f2c94c 100%) !important;
+}
+
+.badge.bg-danger {
+  background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%) !important;
+}
+
+/* Button Styling */
+.btn {
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  color: white;
+}
+
+.btn-info {
+  background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+  color: white;
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, #f2994a 0%, #f2c94c 100%);
+  color: white;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+  color: white;
+}
+
+/* Loading and Error States */
+.loading-state, .error-state {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  margin: 3rem auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.loading-state {
+  color: #667eea;
+  font-size: 1.2rem;
+}
+
+.error-state {
+  color: #dc3545;
+}
+
+/* Rank Badges */
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.rank-badge.gold {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #333;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.5);
+}
+
+.rank-badge.silver {
+  background: linear-gradient(135deg, #c0c0c0, #e8e8e8);
+  color: #333;
+  box-shadow: 0 2px 8px rgba(192, 192, 192, 0.5);
+}
+
+.rank-badge.bronze {
+  background: linear-gradient(135deg, #cd7f32, #e8a87c);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(205, 127, 50, 0.5);
+}
+
+.rank-badge.default {
+  background: #667eea;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-wrapper,
+  .home-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
