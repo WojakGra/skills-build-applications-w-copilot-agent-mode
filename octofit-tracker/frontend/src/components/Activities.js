@@ -62,7 +62,7 @@ function Activities() {
             {activities.map((activity) => (
               <tr key={activity.id || activity._id}>
                 <td>{activity.user_name}</td>
-                <td>{activity.activity_type}</td>
+                <td>{activity.type}</td>
                 <td>{activity.duration}</td>
                 <td>{activity.distance}</td>
                 <td>{activity.calories}</td>

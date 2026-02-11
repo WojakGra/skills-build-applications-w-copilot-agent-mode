@@ -60,7 +60,7 @@ function Workouts() {
             {workouts.map((workout) => (
               <tr key={workout.id || workout._id}>
                 <td>{workout.user_name}</td>
-                <td>{workout.workout_type}</td>
+                <td>{workout.name}</td>
                 <td>{workout.description}</td>
                 <td>{new Date(workout.suggested_date).toLocaleDateString()}</td>
               </tr>
